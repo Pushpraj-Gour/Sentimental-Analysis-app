@@ -6,8 +6,8 @@ from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 import streamlit as st
 
-clr = pickle.load(open("C:/Users/rajr1/Desktop/ML/Sentimental analysis/model.sav","rb"))
-vector = pickle.load(open("C:/Users/rajr1/Desktop/ML/Sentimental analysis/vector.sav","rb"))
+clr = pickle.load(open("model.sav","rb"))
+vector = pickle.load(open("vector.sav","rb"))
 # print("Hello")
 
 port_stem = PorterStemmer()
@@ -29,8 +29,6 @@ def predictor(text):
         return f"'{text}'--> it's a positive Review"
     else:
         return f"'{text}'--> It's a negative Review"
-
-text = ["Nice Product","This is waste of money I don't Like it","I will kill you","This product is not worth of money"]
 
 def main():
 
