@@ -2,10 +2,12 @@ import pickle
 import numpy as np
 import pandas as pd
 import re
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 import streamlit as st
 
+nltk.download("stopwords")
 clr = pickle.load(open("model.sav","rb"))
 vector = pickle.load(open("vector.sav","rb"))
 # print("Hello")
