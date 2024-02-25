@@ -35,7 +35,7 @@ def predictor(text):
 def main():
 
     # Giving the title
-    st.title("Sentimental Analysis")
+    st.title("Sentiment Analysis")
 
 
     # Getting the input data from user
