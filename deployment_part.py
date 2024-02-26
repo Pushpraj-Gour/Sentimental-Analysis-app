@@ -31,7 +31,7 @@ def predictor(text):
         return f"'{text}'--> it's a Positive Review"
     else:
         return f"'{text}'--> It's a negative Review"
-
+result = pd.DataFrame([1,1,1,1,1,1,1,1,1,1,0,0,0,0])
 def main():
 
     # Giving the title
@@ -44,8 +44,7 @@ def main():
 
     #Code for prediction
     response = ''
-
-
+    st.bar_chart(data=result.count_values())
     # Creating a button
 
     if st.button("Sentiment"):
