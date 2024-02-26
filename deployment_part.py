@@ -27,8 +27,8 @@ def predictor(text):
     new_text= stemming(text)
     new_text = vector.transform([text])
     result = clr.predict(new_text)
-    if result == 0:
-        return f"'{text}'--> it's a negative Review"
+    if result == 4:
+        return f"'{text}'--> it's a Positive Review"
     else:
         return f"'{text}'--> It's a negative Review"
 
