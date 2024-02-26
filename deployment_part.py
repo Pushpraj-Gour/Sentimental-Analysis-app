@@ -31,8 +31,7 @@ def predictor(text):
         return f"'{text}'--> it's a Positive Review"
     else:
         return f"'{text}'--> It's a negative Review"
-x = pd.DataFrame([1,2,3,4,5])
-y = pd.DataFrame(["a","b","c","d","e"])
+
 def main():
 
     # Giving the title
@@ -45,7 +44,10 @@ def main():
 
     #Code for prediction
     response = ''
-    st.bar_chart(data=result)
+    data = [2, 2, 2, 2, 2, 2, 2, 2, 0, 0]
+
+# Draw a bar chart using Streamlit
+    st.bar_chart(data)
     # Creating a button
 
     if st.button("Sentiment"):
