@@ -1,4 +1,4 @@
-import pickle
+                  import pickle
 import numpy as np
 import pandas as pd
 import re
@@ -31,7 +31,8 @@ def predictor(text):
         return f"'{text}'--> it's a Positive Review"
     else:
         return f"'{text}'--> It's a negative Review"
-result = pd.DataFrame([1,1,1,1,1,1,1,1,1,1,0,0,0,0])
+x = pd.DataFrame([1,2,3,4,5])
+y = pd.DataFrame(["a","b","c","d","e"])
 def main():
 
     # Giving the title
@@ -44,7 +45,7 @@ def main():
 
     #Code for prediction
     response = ''
-    st.bar_chart(data=result.count_values())
+    st.bar_chart(data=result)
     # Creating a button
 
     if st.button("Sentiment"):
