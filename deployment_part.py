@@ -44,11 +44,7 @@ def main():
 
     #Code for prediction
     response = ''
-    data = [2, 2, 2, 2, 2, 2, 2, 2, 0, 0]
 
-# Draw a bar chart using Streamlit
-    st.bar_chart(data)
-    # Creating a button
 
     if st.button("Sentiment"):
         response = predictor(user_review)
